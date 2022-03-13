@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    height: 60vh;
+}
+
+header {
+    background-color: rgba(36, 30, 30, 0.95);
+    position: absolute;
+    top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 60vh;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    font-family: 'Kalam', cursive;
+}
+
+.inactive {
+    opacity: 0.75;
+    transition-duration: 300ms;
+}
+
+.inactive:hover {
+    opacity: 1;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+h1, h2, p {
+    font-family: 'Arima Madurai', cursive;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+p {
+    font-size: 1.25rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design-project-preview {
+    display: flex;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 60%;
+    min-width: 500px;
+    background-color: rgba(240, 164, 228, 0.3);
+}
+
+.design-project-preview img {
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.design-project-preview img:first-of-type {
+    margin-left: 2.5%
+}
+
+.design-project-preview div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+div a {
+    display: block;
+    color: black;
+    font-size: 1.25rem;
+    margin-top: 3.25rem;
+}
+
+@media only screen and (max-height: 580px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    p {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h2 {
+        font-size: 1.45rem;
+    }
+    div a {
+        font-size: 1rem;
+        margin-top: 2.7rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    div a {
+        font-size: 0.83rem;
+        margin-top: 2.25rem;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    header h1, header p {
+        display: none;
+    }
+    header {
+        height: 3.5rem;
+    }
+    .divider {
+        height: 3.5rem;
+    }
+}
