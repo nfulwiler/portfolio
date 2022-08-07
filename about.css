@@ -27,7 +27,7 @@ ul {
 li a {
     color: white;
     text-decoration: none;
-    margin-right: 12rem;
+    margin-right: 10rem;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
 }
 
 .inactive {
-    margin-right: 10rem;
+    margin-right: 12rem;
     opacity: 0.75;
     transition-duration: 300ms;
 }
@@ -61,8 +61,7 @@ h1, h2, p {
     font-family: 'Arima Madurai', cursive;
 }
 
-h1, p {
-    text-align: center;
+h1, header p {
     color: white;
 }
 
@@ -72,91 +71,39 @@ h1 {
     margin-bottom: 1vh;
 }
 
-p:first-of-type {
-    margin-bottom: initial;
-}
-
 p {
-    width: 70%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
     font-size: 1.25rem;
 }
 
-main {
-    margin-top: 4%;
-    display: grid;
-    grid-template: 58% 58% / 32% 32%;
-    column-gap: 12%;
-    row-gap: 12%;
-    justify-content: center;
-    justify-items: center;
+#back-to-portfolio {
+    display: block;
+    font-size: 1.25rem;
+    color: black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.design-project-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-    border-radius: 30px;
-    min-width: 500px;
+h1, h2, p, #back-to-portfolio {
     text-align: center;
 }
 
-.design-project-preview img {
-    max-width: 100%;
-    height: auto;
-    
+h2, #back-to-portfolio {
+    margin-top: 3.75rem;
 }
 
-#cafe-project {
-    background-color: rgba(240, 164, 228, 0.3);
-}
-
-#cafe-project div {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#cafe-project img {
-    width: 40%;
-}
-
-#bakery-project {
-    background-color: rgba(255, 140, 140, 0.3);
-}
-
-#bakery-project img, #healthy-recipe-project img {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 82.5%;
-}
-
-#healthy-recipe-project {
-    background-color: rgba(41, 186, 64, 0.3);
-}
-
-.design-project-preview img:first-of-type {
-    margin-right: 1%;
-}
-
-h2 {
-    font-size: 1.75rem;
-    margin-top: 6%;
-    margin-bottom: 0;
-}
-
-div a {
-    display: block;
-    color: black;
-    font-size: 1.25rem;
-    margin-top: 0;
-    margin-bottom: 6%;
+@media only screen and (max-width: 1400px) {
+    p {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-height: 450px) {
-    h1, p {
+    h1, header p {
         display: none;
     }
     header, .divider {
@@ -166,13 +113,16 @@ div a {
         position: sticky;
         justify-content: center;
     }
+    h2:first-of-type {
+        margin-top: 0.25rem;
+    }
 }
 
 @media only screen and (max-height: 550px) {
     h1 {
         font-size: 2.7rem;
     }
-    p {
+    header p {
         font-size: 1.125rem;
     }
 }
@@ -205,6 +155,9 @@ div a {
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 1.35rem;
     }
     p {
         font-size: 1.125rem;
