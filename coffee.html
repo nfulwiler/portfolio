@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Kalam&display=swap" rel="stylesheet">
+    <link href="./coffee.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">portfolio</a></li>
+                <li><a href="./about.html">about</a></li>
+            </ul>
+        </nav>
+        <h1><div>Coffee</div> <div>Website</div></h1>
+        <p>The goal: Use visual design principles to create an intuitive design for a website. In this case, about coffee!</p>
+    </header>
+    <main>
+        <h2>Wireframing</h2>
+        <p>Before a UI can be brought to life through color, typography, or other elements of visual design, its fundamental layout should be known. Low fidelity wireframes are a relatively quick way to show pages' intended layouts. I knew that I wanted each page to have a navigation bar at the top, with introductory text over a background image immediately underneath:</p>
+        <img src="./CoffeeHomeWireframe.png" alt="">
+        <p>Even though we haven't started visual designing yet, we can already see some UI principles here in the form of hiearchy. The heading and sub-heading text appear to be important to the page as a result of their fairly large font size and being centered in the header. It's clear that they describe what the page will be about. In the case of this particular page, they describe what the paragraphs below are about.</p>
+        <p>The next page was going to be about explaining different coffee brewers. For this, I thought that a two column layout would be fitting. Sub-heading and paragraph text could go on the left, and example images on the right.</p>
+        <img src="./CoffeeBrewersWireframe.png" alt="">
+        <p>Lastly, the third layout style for this project would be for tutorials.</p>
+        <img src="./LatteWireframe.png" alt="">
+        <h2>Visual Designing - My Thought Process</h2>
+        <p>I came up with a style guide, detailing the exact typefaces, fonts, colors, and so on:</p>
+        <img src="./CoffeeStyleGuide.png" alt="">
+        <p>Unlike my other projects on this portfolio, which I created the mockups for using Figma, I chose to write and design this website with HTML/CSS. This granted me the opportunity for some great practice with those tools, as well as the opportunity for seeing design from a perspective of code and implementation.</p>
+        <img src="./CoffeeHome.png" alt="">
+        <p>I made sure that the foreground colors on the navbar contrasted well enough to the background to fit accessibility guidelines. The active navbar link (to the current page) contrasts to the background with a ratio of 13.3 : 1. The two inactive links, which are a slightly lower opacity to indicate that they aren't the current page, have a contrast ratio of 7.53 : 1. The button has a contrast ratio of 8.82 : 1.</p>
+        <p>As for contrast between the background image and the heading and sub-heading text over it, I knew that I would have to decrease the brightness of the background image to increase the readability of the white heading text. I used the backdrop-filter CSS property to bring the background's brightness down to 62%. A shadow was also applied to the two pieces of heading text via the text-shadow property.</p>
+        <p>Regarding the paragraphs, two main styles were applied to make reading more comfortable. First of all, the line width is such that paragraphs don't span too much or too little of the page. Second, the line height creates sufficient space between each line of text.</p>
+        <img src="./CoffeeDropdown.png" alt="">
+        <img src="./CoffeeDropdown2.png" alt="">
+        <p>On hover, each link in the dropdown menu has a background color which is the same color as the button, just with a slightly lower opacity. This is an example of keeping a consistent color pattern.</p>
+        <img src="./CoffeeBrewers.png" alt="">
+        <p>Moving on to the next page, I began to design the two column layout of coffee brewers being explained. Hiearchy is further exercised here by the main section's sub-headings being larger than their associated paragraph text, but still smaller than the heading text in the header.</p>
+        <img src="./CoffeeBrewers2.png" alt="">
+        <p>Repetition and rhythm are two design principles that are pretty easy to spot with this page. Each brewing method has a sub-heading, brief paragraph description, and link to a hypothetical guide on how to use it, and the brewing methods are equally spaced apart from each other.</p>
+        <p>Something else that you'll notice is the styling applied to the links to differentiate them from the regular paragraph text. Each link in the main section is underlined and italic to indicate that they are in fact links.</p>
+        <img src="./CoffeeLatte.png" alt="">
+        <p>The tutorials example page follows a design of a centered text, step by step guide. The gestalt principle of similarity can be seen here - by each step having a subheading and paragraph text underneath, it's easy to tell that these are all connected or related, and that they're all steps of how to make a latte.</p>
+        <p>Proximity is another gestalt principle at play here. If the subheadings and paragraph text were spaced apart significantly farther, it would likely become confusing to tell which set of text a particular subheading was associated with.</p>
+        <h2>Takeaways</h2>
+        <p>I think that this brief project demonstrates that even in rather simple designs, there can be quite a lot of design principles at work! Consistency is something that I think can be especially noticed throughout these pages. Each page resembles one another through the continued use of the same fonts, colors, and overall styles. This consistency creates a sense of familiarity and recognition, which I think is important in any project.</p>
+        <a href="./index.html">Back to projects</a>
+        <br>
+    </main>
+</body>
+</html>
