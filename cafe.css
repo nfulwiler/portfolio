@@ -11,6 +11,11 @@ header {
     height: 60vh;
 }
 
+nav {
+    position: absolute;
+    width: 100%;
+}
+
 ul {
     display: flex;
     justify-content: right;
@@ -138,21 +143,27 @@ main a {
     width: fit-content;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1907px) {
     header p {
-        width: 35%;
+        width: 29%;
     }
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1712px) {
+    header p {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 1507px) {
+    header p {
+        width: 36%;
+    }
+}
+
+@media only screen and (max-width: 1382px) {
     header p {
         width: 40%;
-    }
-}
-
-@media only screen and (max-width: 1190px) {
-    header p {
-        width: 45%;
     }
 }
 
@@ -162,53 +173,77 @@ main a {
     }
 }
 
-@media only screen and (max-width: 1057px) {
-    h1, header p {
-        margin-left: 15vw;
-    }
-    header p {
-        width: 50%;
-    }
+@media only screen and (max-width: 1201px) {
     li a {
-        margin-right: 6rem;
+        margin-right: 8rem;
     }
     a[href*="about"] {
         margin-right: 5rem;
     }
 }
 
-@media only screen and (max-width: 955px) {
+@media only screen and (max-width: 1246px) {
+    h1, header p {
+        margin-left: 15vw;
+    }
+    header p {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1109px) {
     h1, header p {
         margin-left: 12vw;
     }
+    header p {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
     header p {
         width: 55%;
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 911px) {
     h1, header p {
         margin-left: auto;
         text-align: center;
     }
-    main p {
-        width: 85%;
+    header p {
+        width: 70%;
     }
+}
+
+@media only screen and (max-width: 708px) {
+    li a {
+        margin-right: 3.75rem;
+    }
+    a[href*="about"] {
+        margin-right: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 695px) {
     header p {
         width: 80%;
     }
 }
 
-@media only screen and (max-height: 650px) {
-    h1 {
-        font-size: 2.7rem;
-    }
+@media only screen and (max-width: 609px) {
     header p {
-        font-size: 1.125rem;
+        width: 85%;
     }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 701px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media only screen and (max-height: 576px) {
     h1, header p {
         display: none;
     }
