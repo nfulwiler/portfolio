@@ -42,6 +42,26 @@ a[href*="about"] {
     margin-right: 10rem;
 }
 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 h1 div {
     display: inline;
     transition-duration: 250ms;
@@ -66,16 +86,23 @@ h1, header p {
 }
 
 header p {
+    opacity: 0;
     margin-bottom: auto;
     margin-top: 0.5rem;
     width: 27%;
     text-align: initial;
+    animation-duration: 0.65s;
+    animation-name: appearIn;
+    animation-delay: 0.65s;
+    animation-fill-mode: forwards;
 }
 
 h1 {
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: 1vh;
+    animation-duration: 0.65s;
+    animation-name: slideIn;
 }
 
 main p, img, main a {
@@ -124,6 +151,7 @@ main a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2.5rem;
     text-align: center;
     width: fit-content;
 }

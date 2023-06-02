@@ -42,6 +42,15 @@ a {
     opacity: 0.9;
 }
 
+@keyframes appearIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 h1 div {
     display: inline;
     transition-duration: 250ms;
@@ -61,12 +70,20 @@ h1, h2, p {
 
 h1, header p {
     color: white;
+    animation-duration: 0.65s;
+    animation-name: appearIn;
 }
 
 h1 {
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: 1vh;
+}
+
+header p {
+    opacity: 0;
+    animation-delay: 0.65s;
+    animation-fill-mode: forwards;
 }
 
 p {
@@ -84,6 +101,7 @@ p {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2.5rem;
 }
 
 h1, h2, p, #back-to-portfolio {

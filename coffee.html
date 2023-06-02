@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <h1><div>Coffee</div> <div>Website</div></h1>
-        <p>The goal: Use visual design principles to create an intuitive design for a website. In this case, about coffee!</p>
+        <p>The goal: Use visual design principles to create an intuitive design for a website about coffee, and implement it using HTML and CSS.</p>
     </header>
     <main>
         <h2>Wireframing</h2>
@@ -36,12 +36,15 @@
         <img src="./CoffeeHome.png" alt="">
         <p>I made sure that the foreground colors on the navbar contrasted well enough to the background to fit accessibility guidelines. The active navbar link (to the current page) contrasts to the background with a ratio of 13.3 : 1. The two inactive links, which are a slightly lower opacity to indicate that they aren't the current page, have a contrast ratio of 7.53 : 1. The button has a contrast ratio of 8.82 : 1.</p>
         <p>As for contrast between the background image and the heading and sub-heading text over it, I knew that I would have to decrease the brightness of the background image to increase the readability of the white heading text. I used the backdrop-filter CSS property to bring the background's brightness down to 62%. A shadow was also applied to the two pieces of heading text via the text-shadow property.</p>
-        <p>Regarding the paragraphs, two main styles were applied to make reading more comfortable. First of all, the line width is such that paragraphs don't span too much or too little of the page. Second, the line height creates sufficient space between each line of text.</p>
+        <p>Regarding the paragraphs, two main styles were applied to make reading more comfortable. First of all, by restraining the paragraph width to 50% of the page width, the line width is such that paragraphs don't span too much or too little of the page. Second, by increasing the line-height in CSS, sufficient space is created between each line of text.</p>
         <img src="./CoffeeDropdown.png" alt="">
         <img src="./CoffeeDropdown2.png" alt="">
-        <p>On hover, each link in the dropdown menu has a background color which is the same color as the button, just with a slightly lower opacity. This is an example of keeping a consistent color pattern.</p>
-        <img src="./CoffeeBrewers.png" alt="">
+        <p>On hover, each link in the dropdown menu has a background color which is the same color as the button, just with a slightly lower opacity - rgba(34, 100%, 64%, 0.8) and rgba(34, 100%, 64%, 1), respectively. This is an example of keeping a consistent color pattern.</p>
+        <p>When the screen's width is smaller, the navbar can take on a hamburger menu, and the nav links can be shown when expanded:</p>
+        <img src="./CoffeeHome2.png">
+        <img src="./CoffeeHome3.png">
         <p>Moving on to the next page, I began to design the two column layout of coffee brewers being explained. Hiearchy is further exercised here by the main section's sub-headings being larger than their associated paragraph text, but still smaller than the heading text in the header.</p>
+        <img src="./CoffeeBrewers.png" alt="">
         <img src="./CoffeeBrewers2.png" alt="">
         <p>Repetition and rhythm are two design principles that are pretty easy to spot with this page. Each brewing method has a sub-heading, brief paragraph description, and link to a hypothetical guide on how to use it, and the brewing methods are equally spaced apart from each other.</p>
         <p>Something else that you'll notice is the styling applied to the links to differentiate them from the regular paragraph text. Each link in the main section is underlined and italic to indicate that they are in fact links.</p>
@@ -50,8 +53,8 @@
         <p>Proximity is another gestalt principle at play here. If the subheadings and paragraph text were spaced apart significantly farther, it would likely become confusing to tell which set of text a particular subheading was associated with.</p>
         <h2>Takeaways</h2>
         <p>I think that this brief project demonstrates that even in rather simple designs, there can be quite a lot of design principles at work! Consistency is something that I think can be especially noticed throughout these pages. Each page resembles one another through the continued use of the same fonts, colors, and overall styles. This consistency creates a sense of familiarity and recognition, which I think is important in any project.</p>
+        <p>Since I designed these mockups directly with HTML/CSS, I went ahead and deployed the project as well! Feel free to <a href="https://the-origin-of-coffee.netlify.app">take a look at it.</a></p>
         <a href="./index.html">Back to projects</a>
-        <br>
     </main>
 </body>
 </html>

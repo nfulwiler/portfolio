@@ -1,9 +1,3 @@
-html {
-    /* background-image: linear-gradient(rgba(232, 137, 27, 0.3) 0 42%, rgba(237, 229, 223, 0.3), rgba(237, 229, 223, 0.3) 48% 75.22%, rgba(240, 164, 228, 0.3), rgba(240, 164, 228, 0.3) 81.22% 100%); */
-    background-image: linear-gradient(rgba(214, 174, 92, 0.3) 0 42%, rgba(237, 229, 223, 0.3), rgba(237, 229, 223, 0.3) 48% 75.22%, rgba(240, 164, 228, 0.3), rgba(240, 164, 228, 0.3) 81.22% 100%);
-}
-/* 237, 229, 223, 0.3 */
-/* 255, 255, 255, 0.3 */
 html, body {
     margin: 0;
     padding: 0;
@@ -48,6 +42,26 @@ a {
     opacity: 0.9;
 }
 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-40%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes appearIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 h1 div {
     display: inline;
     transition-duration: 250ms;
@@ -75,11 +89,18 @@ h1 {
     font-size: 3rem;
     margin-top: auto;
     margin-bottom: 1vh;
+    animation-duration: 0.65s;
+    animation-name: slideIn;
 }
 
 header p {
+    opacity: 0;
     width: 26%;
     margin-bottom: auto;
+    animation-duration: 0.65s;
+    animation-name: appearIn;
+    animation-delay: 0.65s;
+    animation-fill-mode: forwards;
 }
 
 header p:first-of-type {
@@ -92,16 +113,12 @@ p {
 
 h2 {
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 9.9rem;
 }
 
 #coffee-project h2 {
     margin-top: 3.75rem;
 }
-
-/*#coffee-project img, #baking-project img {
-    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
-}*/
 
 img {
     width: 70%;
@@ -110,6 +127,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5rem;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 main a {
@@ -121,6 +139,7 @@ main a {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: fit-content;
+    margin-bottom: 9.9rem;
 }
 
 #cafe-project div {
@@ -135,6 +154,10 @@ main a {
     margin-bottom: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+#baking-project a {
+    margin-bottom: 3.75rem;
 }
 
 @media only screen and (max-width: 1840px) {
@@ -251,8 +274,5 @@ main a {
         position: sticky;
         justify-content: center;
         z-index: 1;
-    }
-    html {
-        background-image: linear-gradient(rgba(214, 174, 92, 0.3) 0 33%, rgba(237, 229, 223, 0.3), rgba(237, 229, 223, 0.3) 39% 71.5%, rgba(240, 164, 228, 0.3), rgba(240, 164, 228, 0.3) 77.5% 100%);
     }
 }
