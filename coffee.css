@@ -148,7 +148,7 @@ img[src="./CoffeeDropdown2.png"] {
     margin-top: 1rem;
 }
 
-main a[href*="index"] {
+#back-to-projects {
     color: black;
     font-size: 1.25rem;
     display: block;
