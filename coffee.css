@@ -34,7 +34,7 @@ li a:hover {
     opacity: 0.9;
 }
 
-li a, main a[href*="index"] {
+li a, #back-to-projects {
     font-family: 'Kalam', cursive;
 }
 
@@ -136,15 +136,15 @@ img {
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
-img[src="./CoffeeHome2.png"], img[src="./CoffeeHome3.png"] {
+img[src="./CoffeeHome2.jpg"], img[src="./CoffeeHome3.jpg"] {
     width: 40%;
 }
 
-img[src="./CoffeeDropdown.png"] {
+img[src="./CoffeeDropdown.jpg"] {
     margin-bottom: 1rem;
 }
 
-img[src="./CoffeeDropdown2.png"] {
+img[src="./CoffeeDropdown2.jpg"] {
     margin-top: 1rem;
 }
 
